@@ -1,0 +1,189 @@
+/*Formatação de toda a página*/
+*{margin: 0; padding: 0;}
+
+/*Formatação da tag "body" (corpo)*/
+body{
+  background: -webkit-gradient(linear, left top, left bottom, from(#A3D9D9), to(#f5f8fa));
+	background-repeat: no-repeat;
+	font-style: "Trebuchet MS";
+}
+
+/*Formatação da barra de navegação*/
+nav{
+  background: #1FB4CC;
+  float: left;
+  width: 100%;
+  text-align: center;
+  font-size: 1.3vw;
+  height: 10%;
+  position: relative;
+  border-top: 0.5vw solid #FF3F9A;
+  -moz-box-shadow: 0 0.2vw 0.3vw 0vw rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 0 0.2vw 0.3vw 0vw rgba(0, 0, 0, 0.16);
+  box-shadow: 0 0.2vw 0.3vw 0vw rgba(0, 0, 0, 0.16);
+  z-index: 10;
+}
+
+nav ul li{
+  position: relative;
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 1%;
+}
+
+nav ul li:hover{background:#FF3F9A;}
+
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  padding: 2em;
+}
+
+nav ul li a:hover{
+  color: #FFEF66;
+  text-decoration: none;
+}
+
+nav ul li.parent ul.child{
+  display: none;
+  color: #9CE0FF;
+}
+ 
+nav ul li.parent:hover ul.child{
+  display: block;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  left: 0px;
+  background: #88BAEB;
+}
+  
+nav ul li.parent ul.child li{
+  text-align: center;
+  padding: 0;
+  height: 10%;
+}
+
+ nav ul li.parent ul.child li:hover{
+  background: #9CE0FF;
+  width: 100%;
+ }
+
+nav ul li.parent ul.child li a{display: block;}
+
+/*divs*/
+
+.pag{
+  width:80%;
+  align-content: center;
+  margin-left: 10%;
+}
+
+.padrao{
+  position: relative;
+  height: 80%;
+  float: left;
+}
+
+.banner{
+  width: 100%;
+  height: auto;
+  -moz-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+  z-index: 10;
+}
+
+.principal{
+  padding: 5%;
+  background: #fff;
+  -moz-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+  z-index: 10;
+}
+
+/*formatação de texto*/
+div.textod{
+  float: left;
+  text-align: justify;
+  font-size: 17px;
+  width: 40%;
+  padding: 3%;
+  font-family: "arial";
+}
+
+ol div.textod li{
+  list-style-position: inside;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+/*formatação das referências*/
+.referencias{
+  float: left;
+  text-align: justify;
+  font-size: 14px;
+  width: 100%;
+  padding: 3%;
+  font-family: "arial";
+}
+
+.referencias ol li{
+  list-style-position: inside;
+}
+
+.referencias h1{
+  font-size: 19px;
+}
+
+h1{
+  text-shadow: 1px 1px #fff;
+  font-weight: bold;
+  color: #025E73;
+}
+
+.midia{
+  width: 95%;
+  padding: 5%;
+  height: auto;
+  float: right;
+}
+
+.subbanner{
+  width: 100%;
+  padding: 2px;
+  float: left;
+  
+}
+
+.referencias a{
+  color: #1FB4CC;
+  text-decoration: none;
+}
+
+/*rodapé*/
+footer{
+  width: 100%;
+  height: 50px;
+  background: #A3D9D9;
+  position: relative;
+  float: left;
+}
+
+/*responsividade*/
+@media only screen and (max-width: 1000px){
+  nav{
+    font-size: 1.7vw;
+  }
+  nav ul li{
+    display: block;
+  }
+  div.textod{
+    width: 95%;
+  }
+  nav ul li.parent:hover ul.child{
+    position: relative;
+  }
+}
